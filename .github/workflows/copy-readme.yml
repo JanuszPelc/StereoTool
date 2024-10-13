@@ -25,7 +25,7 @@ jobs:
       with:
         repository: JanuszPelc/januszpelc.github.io
         path: januszpelc.github.io
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.ACTIONS_PAT }}
 
     - name: Copy README.md
       run: cp StereoTool/README.md januszpelc.github.io/README.md
