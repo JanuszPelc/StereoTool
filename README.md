@@ -1,6 +1,6 @@
 # JP Stereo Tool
 
-A native Bitwig device that fills a gap in Bitwig Studio's metering options.
+A native device for Bitwig Studio that fills a gap in its metering options.
 
 Primarily functioning as a stereo balance and phase correlation meter, it helps maintain well-balanced mixes and identify mono compatibility issues.
 
@@ -31,10 +31,10 @@ You can download the latest version of **JP Stereo Tool** from the [GitHub repos
 
 1. Go to the repository and download the "[Install-Stereo-Tool.zip](https://github.com/JanuszPelc/StereoTool/raw/main/Install-Stereo-Tool.zip?version=15148d561)" file.
 2. Unzip the downloaded file to access the "JP Stereo Tool.bwpreset" file.
-3. Drag and drop the "JP Stereo Tool.bwpreset" file onto a track in Bitwig's arrangement or mixer window.
-4. In Bitwig, right-click on the device you just added and select "Save Preset to Library" to make it easily accessible later.
+3. Drag and drop the "JP Stereo Tool.bwpreset" file onto a track in Bitwig Studio's arrangement or mixer window.
+4. In Bitwig Studio, right-click on the device you just added and select "Save Preset to Library" to make it easily accessible later.
 
-Alternatively, you can copy the downloaded "JP Stereo Tool.bwpreset" file directly into Bitwig's library "Presets" folder, which can be found at:
+Alternatively, you can copy the downloaded "JP Stereo Tool.bwpreset" file directly into Bitwig Studio's library "Presets" folder, which can be found at:
 
 - **Linux and macOS**: "~/Documents/Bitwig Studio/Library/Presets"
 - **Windows**: "%userprofile%\Documents\Bitwig Studio\Library\Presets"
@@ -94,7 +94,7 @@ The **Meters Knob** adjusts the responsiveness of the meters' movement (average 
 
 Ever wondered what's really going on behind the scenes? This section dives deeper for those curious about the inner workings.
 
-**JP Stereo Tool** is a native Bitwig device, using a bit of audio routing trickery to avoid signal alterations introduced by the FX Grid. The meters are visualized through a creative (mis)use of the Steps modulators. CPU usage is generally low but increases slightly when the **Stereoize Knob** is set to a non-zero value. The device adds 34 samples (about 0.7 ms) of compensated latency.
+**JP Stereo Tool** is a native Bitwig Studio device, using a bit of audio routing trickery to avoid signal alterations introduced by the FX Grid. The meters are visualized through a creative (mis)use of the Steps modulators. CPU usage is generally low but increases slightly when the **Stereoize Knob** is set to a non-zero value. The device adds 34 samples (about 0.7 ms) of compensated latency.
 
 The signal chain within **JP Stereo Tool** follows this order: **Stereoize** > **Width** > **Panning** > **Meters**. This arrangement allows each control to progressively shape the stereo image, with the order of the user interface knobs reflecting the internal signal chain.
 
@@ -104,7 +104,7 @@ The **Balance Meter** calculates the difference between the RMS (Root Mean Squar
 
 The **Stereoize Knob** splits the signal into three bands using 18 dB per octave crossover filters, and in the middle band applies a comb filtering effect to the left and right channels complementarily. As the amount is raised, the mix between the original and the artificially enhanced signal increases, while the frequency of complementary notches and peaks shifts gradually, making it easier to achieve the optimal sound.
 
-The **Width Knob** is mapped directly to Bitwig's Tool device's Width knob. It works simply by altering the volume of the side signal.
+The **Width Knob** is mapped directly to Bitwig Studio's Tool device's Width knob. It works simply by altering the volume of the side signal.
 
 The **Panning Knob** uses true stereo panning, allowing the image to shift without altering the left-right gain relationship. In contrast, typical balance-based panning simply lowers the level of one channel, which can cause parts of a stereo signal to disappear. For example, hard-panning a sound with a ping-pong delay using balance-based panning would make one side inaudible (either "ping" or "pong").
 
