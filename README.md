@@ -4,7 +4,7 @@ Primarily functioning as a stereo balance and phase correlation meter, it helps 
 
 Additionally, it offers a few controls for shaping the stereo image, enhancing its utility in everyday music production and sound design tasks.
 
-![User Interface Overview](Overview.png)
+![User Interface Overview](Assets/Overview.png)
 
 The default **Metering View** provides a streamlined monitoring interface:
 
@@ -23,7 +23,7 @@ The **Control View** offers access to stereo shaping controls:
 
 You can download the latest version of **JP Stereo Tool** from the [GitHub repository](https://github.com/JanuszPelc/StereoTool). The repository also contains documentation and license information.
 
-1. Go to the repository and download the "[Install-Stereo-Tool.zip](https://github.com/JanuszPelc/StereoTool/raw/main/Install-Stereo-Tool.zip?version=19a6c58ce)" file.
+1. Go to the repository and download the "[JP-Stereo-Tool-Download.zip](https://github.com/JanuszPelc/StereoTool/raw/main/JP-Stereo-Tool-Download.zip?version=13ec18f16)" file.
 2. Unzip the downloaded file to access the "JP Stereo Tool.bwpreset" file.
 3. Drag and drop the "JP Stereo Tool.bwpreset" file onto a track in Bitwig Studio's arrangement or mixer window.
 4. In Bitwig Studio, right-click on the device you just added and select "Save Preset to Library" to make it easily accessible later.
