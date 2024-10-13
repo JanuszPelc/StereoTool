@@ -12,7 +12,7 @@ permissions:
 jobs:
   copy-readme:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout StereoTool repository
       uses: actions/checkout@v3
@@ -27,6 +27,9 @@ jobs:
 
     - name: Copy README.md
       run: cp StereoTool/README.md januszpelc.github.io/README.md
+
+    - name: List contents of januszpelc.github.io (debug)
+      run: ls -al januszpelc.github.io
 
     - name: Commit and push changes
       run: |
