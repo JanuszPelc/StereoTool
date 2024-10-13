@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 jobs:
   copy-readme:
@@ -15,11 +16,13 @@ jobs:
     steps:
     - name: Checkout StereoTool repository
       uses: actions/checkout@v3
+      with:
+        path: StereoTool
 
     - name: Checkout januszpelc.github.io repository
       uses: actions/checkout@v3
       with:
-        repository: JanuszPelc/januszpelc.github.io
+        path: januszpelc.github.io
         token: ${{ secrets.ACTIONS_PAT }}
 
     - name: Copy README.md
