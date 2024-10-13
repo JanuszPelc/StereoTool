@@ -11,17 +11,17 @@ jobs:
     
     steps:
     - name: Checkout StereoTool repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: JanuszPelc/StereoTool
         path: StereoTool
 
     - name: Checkout januszpelc.github.io repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: JanuszPelc/januszpelc.github.io
         path: januszpelc.github.io
-        token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Copy README.md
       run: cp StereoTool/README.md januszpelc.github.io/README.md
