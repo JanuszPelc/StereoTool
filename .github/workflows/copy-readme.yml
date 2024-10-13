@@ -19,9 +19,6 @@ jobs:
       with:
         path: StereoTool
 
-    - name: List contents of StereoTool repository (debug)
-      run: ls -al StereoTool
-
     - name: Checkout januszpelc.github.io repository
       uses: actions/checkout@v3
       with:
@@ -29,10 +26,7 @@ jobs:
         path: januszpelc.github.io
         token: ${{ secrets.ACTIONS_PAT }}
 
-    - name: List contents of januszpelc.github.io repository (debug)
-      run: ls -al januszpelc.github.io
-
-    - name: Copy README.md to januszpelc.github.io
+    - name: Copy README.md
       run: cp StereoTool/README.md januszpelc.github.io/README.md
 
     - name: Commit and push changes
