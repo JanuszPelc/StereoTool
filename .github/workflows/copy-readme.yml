@@ -1,0 +1,36 @@
+name: Copy README to januszpelc.github.io
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  copy-readme:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout StereoTool repository
+      uses: actions/checkout@v2
+      with:
+        repository: JanuszPelc/StereoTool
+        path: StereoTool
+
+    - name: Checkout januszpelc.github.io repository
+      uses: actions/checkout@v2
+      with:
+        repository: JanuszPelc/januszpelc.github.io
+        path: januszpelc.github.io
+        token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
+
+    - name: Copy README.md
+      run: cp StereoTool/README.md januszpelc.github.io/README.md
+
+    - name: Commit and push changes
+      run: |
+        cd januszpelc.github.io
+        git config --global user.email "87265669+JanuszPelc@users.noreply.github.com"
+        git config --global user.name "GitHub Action"
+        git add README.md
+        git commit -m "Update README from StereoTool"
+        git push
