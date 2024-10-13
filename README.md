@@ -1,12 +1,8 @@
-# JP Stereo Tool
-
-A native device for Bitwig Studio that fills a gap in its metering options.
+**JP Stereo Tool** is a native device for Bitwig Studio that fills a gap in its metering options.
 
 Primarily functioning as a stereo balance and phase correlation meter, it helps maintain well-balanced mixes and identify mono compatibility issues.
 
 Additionally, it offers a few controls for shaping the stereo image, enhancing its utility in everyday music production and sound design tasks.
-
----
 
 ![User Interface Overview](Overview.png)
 
@@ -23,13 +19,11 @@ The **Control View** offers access to stereo shaping controls:
 6. **Panning Knob**: Shifts the signal's position within the stereo field (true stereo panning).
 7. **Meters Knob**: Adjusts the responsiveness of the meters' movement (average measurement time).
 
----
-
-# How to Install
+## How to Install
 
 You can download the latest version of **JP Stereo Tool** from the [GitHub repository](https://github.com/JanuszPelc/StereoTool). The repository also contains documentation and license information.
 
-1. Go to the repository and download the "[Install-Stereo-Tool.zip](https://github.com/JanuszPelc/StereoTool/raw/main/Install-Stereo-Tool.zip?version=15148d561)" file.
+1. Go to the repository and download the "[Install-Stereo-Tool.zip](https://github.com/JanuszPelc/StereoTool/raw/main/Install-Stereo-Tool.zip?version=19a6c58ce)" file.
 2. Unzip the downloaded file to access the "JP Stereo Tool.bwpreset" file.
 3. Drag and drop the "JP Stereo Tool.bwpreset" file onto a track in Bitwig Studio's arrangement or mixer window.
 4. In Bitwig Studio, right-click on the device you just added and select "Save Preset to Library" to make it easily accessible later.
@@ -42,55 +36,51 @@ Alternatively, you can copy the downloaded "JP Stereo Tool.bwpreset" file direct
 > [!NOTE]  
 > Before installing, ensure you have the full version of **Bitwig Studio**, and it's recommended to use the latest version. This device was specifically tested with **Bitwig Studio version 5.2.5**.
 
----
+## Usage Guide
 
-# Usage Guide
-
-## Balance Meter
+### Balance Meter
 
 The **Balance Meter** indicates the perceived center position (balance) within the stereo field. The indicator moves dynamically from left to right, showing whether the left or right channel is more dominant.
 
 > [!TIP]
 > For stereo buses, to maintain a well-balanced mix, the indicator should ideally remain in the center.
 
-## Correlation Meter
+### Correlation Meter
 
 The **Correlation Meter** displays how well the left and right channels are aligned (phase correlation). The indicator moves dynamically from left (channels are fully out of phase) to right (channels are perfectly in phase).
 
 > [!TIP]
 > To aim for good mono compatibility, ensure the indicator remains mostly between the **Center** and the **Right Side**.
 
-## Stereoize Knob
+### Stereoize Knob
 
 The **Stereoize Knob** adds extra stereo content to a mono or stereo signal (stereo enhancement), with settings ranging from 0% (no effect, default) to 100% (maximum enhancement). Since the **Stereoize Knob** is mono compatible, it won’t produce any audible effect if the **Width Knob** is set to -100% (mono).
 
 > [!TIP]  
 > Fine-tune the **Stereoize Knob** amount for the optimal sound, then adjust the **Width Knob** amount to taste.
 
-## Width Knob
+### Width Knob
 
 The **Width Knob** adjusts the width of a stereo signal (side loudness), ranging from -100% (fully mono) to +100% (triple the original width), with a default setting of 0% (unaltered). To widen a mono signal, which lacks side information by definition, use the dedicated **Stereoize Knob**.
 
 > [!TIP]  
 > To improve coherency in the stereo image, try reducing the width of wider sounds and panning them to distinct positions in the stereo field.
 
-## Panning Knob
+### Panning Knob
 
 The **Panning Knob** shifts the signal's position within the stereo field (true stereo panning), ranging from -100% (hard left) to +100% (hard right), with a default value of 0% (unaltered).
 
 > [!TIP]  
 > After setting the desired stereo position, experiment with the **Width Knob** amount to improve the overall balance of your mix.
 
-## Meters Knob
+### Meters Knob
 
 The **Meters Knob** adjusts the responsiveness of the meters' movement (average measurement time), ranging from -100% (very slow) to +100% (very fast), with a default value of 0% (balanced).
 
 > [!TIP]
 > It's best to stick with a consistent **Meters Knob** setting to build familiarity with the meters' readouts, unless you have a specific need. The default setting is a good starting point.
 
----
-
-# Geeky Insights
+## Geeky Insights
 
 Ever wondered what's really going on behind the scenes? This section dives deeper for those curious about the inner workings.
 
@@ -111,9 +101,7 @@ The **Panning Knob** uses true stereo panning, allowing the image to shift witho
 > [!TIP]
 > When in doubt, listen to your stereo mix in mono. Believe the meters, but trust your ears, always. May the balance be with you!
 
----
-
-# License
+## License
 
 You are free to use, modify, and distribute this device in any way you choose. While no attribution is required, feel free to link back to the [GitHub repository](https://github.com/JanuszPelc/StereoTool) if you’d like to credit the project.
 
