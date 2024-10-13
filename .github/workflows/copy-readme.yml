@@ -3,7 +3,10 @@ name: Copy README to januszpelc.github.io
 on:
   push:
     branches:
-      - main  # Trigger on push to the main branch
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   copy-readme:
