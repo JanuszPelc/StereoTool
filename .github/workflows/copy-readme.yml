@@ -29,7 +29,18 @@ jobs:
     - name: Copy README.md
       run: cp StereoTool/README.md januszpelc.github.io/README.md
 
+    - name: Check for changes
+      run: |
+        cd januszpelc.github.io
+        if git diff --quiet; then
+          echo "No changes detected, skipping commit."
+          exit 0
+        else
+          echo "Changes detected, proceeding to commit."
+        fi
+
     - name: Commit and push changes
+      if: success() && steps.check-for-changes.outputs.changed == 'true'
       run: |
         cd januszpelc.github.io
         git config --global user.email "87265669+JanuszPelc@users.noreply.github.com"
