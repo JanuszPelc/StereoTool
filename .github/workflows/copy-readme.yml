@@ -30,13 +30,16 @@ jobs:
       run: cp StereoTool/README.md januszpelc.github.io/README.md
 
     - name: Check for changes
+      id: check-for-changes
       run: |
         cd januszpelc.github.io
         if git diff --quiet; then
           echo "No changes detected, skipping commit."
+          echo "::set-output name=changed::false"
           exit 0
         else
           echo "Changes detected, proceeding to commit."
+          echo "::set-output name=changed::true"
         fi
 
     - name: Commit and push changes
