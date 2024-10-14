@@ -25,7 +25,7 @@ The **Control View** offers access to stereo shaping controls:
 
 You can download the latest version of **JP Stereo Tool** from the [GitHub repository](https://github.com/JanuszPelc/StereoTool). The repository also contains documentation and license information.
 
-1. Go to the repository and download the "[JP-Stereo-Tool-Download.zip](https://github.com/JanuszPelc/StereoTool/raw/main/JP-Stereo-Tool-Download.zip?version=17f180d28)" file.
+1. Go to the repository and download the "[JP-Stereo-Tool-Download.zip](https://github.com/JanuszPelc/StereoTool/raw/main/JP-Stereo-Tool-Download.zip?version=1bfb1bec1)" file.
 2. Unzip the downloaded file to access the "JP Stereo Tool.bwpreset" file.
 3. Drag and drop the "JP Stereo Tool.bwpreset" file onto a track in Bitwig Studio's arrangement or mixer window.
 4. In Bitwig Studio, right-click on the device you just added and select "Save Preset to Library" to make it easily accessible later.
@@ -59,7 +59,7 @@ The **Correlation Meter** displays how well the left and right channels are alig
 The **Stereoize Knob** adds extra stereo content to a mono or stereo signal (stereo enhancement), with settings ranging from 0% (no effect, default) to 100% (maximum enhancement). Since the **Stereoize Knob** is mono compatible, it won’t produce any audible effect if the **Width Knob** is set to -100% (mono).
 
 > [!TIP]  
-> Fine-tune the **Stereoize Knob** amount for the optimal sound, then adjust the **Width Knob** amount to taste.
+> Fine-tune the **Stereoize Knob** amount to achieve a natural sound, then adjust the **Width Knob** amount to taste. For stereoizing a mono sound, a setting worth trying is **Stereoize** at +67% and **Width** at +57%.
 
 ### Width Knob
 
