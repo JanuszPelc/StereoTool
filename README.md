@@ -45,7 +45,7 @@ Alternatively, you can copy the downloaded "JP Stereo Tool.bwpreset" file direct
 The **Balance Meter** indicates the perceived center position (balance) within the stereo field. The indicator moves dynamically from left to right, showing whether the left or right channel is more dominant.
 
 > [!TIP]
-> For stereo buses, to maintain a well-balanced mix, the indicator should ideally remain in the center.
+> For stereo buses, to maintain a well-balanced mix, the indicator should generally remain in the center.
 
 ### Correlation Meter
 
