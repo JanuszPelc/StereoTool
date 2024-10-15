@@ -23,9 +23,9 @@ The **Control View** offers access to stereo shaping controls:
 
 ## How to Install
 
-The [GitHub repository](https://github.com/JanuszPelc/StereoToolTest) for **JP Stereo Tool** contains all releases, as well as documentation and license information.
+The [GitHub repository](https://github.com/JanuszPelc/StereoTool) for **JP Stereo Tool** contains all releases, as well as documentation and license information.
 
-1. Visit the repository's [Latest Release](https://github.com/JanuszPelc/StereoToolTest/releases/latest) page to download the "JP-Stereo-Tool-Download.zip" file.
+1. Visit the repository's [Latest Release](https://github.com/JanuszPelc/StereoTool/releases/latest) page to download the "JP-Stereo-Tool-Download.zip" file.
 2. Unzip the downloaded file to access the "JP Stereo Tool.bwpreset" file.
 3. Drag and drop the "JP Stereo Tool.bwpreset" file onto a track in Bitwig Studio's arrangement or mixer window.
 4. In Bitwig Studio, right-click on the device you just added and select "Save Preset to Library" to make it easily accessible later.
