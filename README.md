@@ -6,7 +6,7 @@ Primarily functioning as a stereo balance and phase correlation meter, it helps 
 
 Additionally, it offers a few controls for shaping the stereo image, enhancing its utility in everyday music production and sound design tasks.
 
-![User Interface Overview](https://github.com/JanuszPelc/StereoTool/raw/main/docs/images/Overview.png)
+![User Interface Overview](https://github.com/JanuszPelc/StereoTool/raw/main/Assets/Images/Overview.png)
 
 The default **Metering View** provides a streamlined monitoring interface:
 
@@ -23,9 +23,9 @@ The **Control View** offers access to stereo shaping controls:
 
 ## How to Install
 
-You can download the latest version of **JP Stereo Tool** from the [GitHub repository](https://github.com/JanuszPelc/StereoTool). The repository also contains documentation and license information.
+The [GitHub repository](https://github.com/JanuszPelc/StereoToolTest) for **JP Stereo Tool** contains all releases, as well as documentation and license information.
 
-1. Go to the repository and download the "[JP-Stereo-Tool-Download.zip](https://github.com/JanuszPelc/StereoTool/raw/main/JP-Stereo-Tool-Download.zip?version=1bfb1bec1)" file.
+1. Visit the repository's [Latest Release](https://github.com/JanuszPelc/StereoToolTest/releases/latest) page to download the "JP-Stereo-Tool-Download.zip" file.
 2. Unzip the downloaded file to access the "JP Stereo Tool.bwpreset" file.
 3. Drag and drop the "JP Stereo Tool.bwpreset" file onto a track in Bitwig Studio's arrangement or mixer window.
 4. In Bitwig Studio, right-click on the device you just added and select "Save Preset to Library" to make it easily accessible later.
@@ -58,21 +58,21 @@ The **Correlation Meter** displays how well the left and right channels are alig
 
 The **Stereoize Knob** adds extra stereo content to a mono or stereo signal (stereo enhancement), with settings ranging from 0% (no effect, default) to 100% (maximum enhancement). Since the **Stereoize Knob** is mono compatible, it won’t produce any audible effect if the **Width Knob** is set to -100% (mono).
 
-> [!TIP]  
-> Fine-tune the **Stereoize Knob** amount to achieve a natural sound, then adjust the **Width Knob** amount to taste. For stereoizing a mono sound, a setting worth trying is **Stereoize** at +67% and **Width** at +57%.
+> [!TIP]
+> Fine-tune the **Stereoize Knob** amount while aiming for a natural-sounding result, then adjust the **Width Knob** amount for desired width. For widening a mono sound, a setting worth trying is **Stereoize** at +67% and **Width** at +57%.
 
 ### Width Knob
 
 The **Width Knob** adjusts the width of a stereo signal (side loudness), ranging from -100% (fully mono) to +100% (triple the original width), with a default setting of 0% (unaltered). To widen a mono signal, which lacks side information by definition, use the dedicated **Stereoize Knob**.
 
-> [!TIP]  
+> [!TIP]
 > To improve coherency in the stereo image, try reducing the width of wider sounds and panning them to distinct positions in the stereo field.
 
 ### Panning Knob
 
 The **Panning Knob** shifts the signal's position within the stereo field (true stereo panning), ranging from -100% (hard left) to +100% (hard right), with a default value of 0% (unaltered).
 
-> [!TIP]  
+> [!TIP]
 > After setting the desired stereo position, experiment with the **Width Knob** amount to improve the overall balance of your mix.
 
 ### Meters Knob
