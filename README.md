@@ -63,7 +63,7 @@ The **Stereoize Knob** adds extra stereo content to a mono or stereo signal (ste
 
 ### Width Knob
 
-The **Width Knob** adjusts the width of a stereo signal (side loudness), ranging from -100% (fully mono) to +100% (triple the original width), with a default setting of 0% (unaltered). To widen a mono signal, which lacks side information by definition, use the dedicated **Stereoize Knob**.
+The **Width Knob** adjusts the width of a stereo signal (side loudness), ranging from -100% (fully mono) to +100% (double the original width), with a default setting of 0% (unaltered). To widen a mono signal, which lacks side information by definition, use the dedicated **Stereoize Knob**.
 
 > [!TIP]
 > To improve coherency in the stereo image, try reducing the width of wider sounds and panning them to distinct positions in the stereo field.
